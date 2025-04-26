@@ -14,13 +14,3 @@ function isPalindrome(string) {
   }
   return true;
 }
-
-const string1 = 'abcdefgh';
-const string2 = ' ';
-const string3 = 'dovod';
-const string4 = 'abraham';
-
-console.log(checkLength(string1, 10));
-console.log(checkLength(string2));
-console.log(isPalindrome(string3));
-console.log(isPalindrome(string4));
