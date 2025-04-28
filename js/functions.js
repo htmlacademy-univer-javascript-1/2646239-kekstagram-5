@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 function checkLength(string, maxLength) {
   return string.length <= maxLength;
 }
