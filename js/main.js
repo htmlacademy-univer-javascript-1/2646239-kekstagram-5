@@ -99,4 +99,5 @@ const generateArrayOfPosts = function() {
   return arrayOfPosts;
 };
 
+// eslint-disable-next-line no-console
 console.log(generateArrayOfPosts());
