@@ -1,7 +1,7 @@
 export const URL_PREFIX = 'photos/';
 export const URL_SUFFIX = '.jpg';
 
-export const AVATAR_PREFIX = 'img/photos';
+export const AVATAR_PREFIX = 'img/avatar-';
 export const AVATAR_SUFFIX = '.svg';
 export const POST_COUNT = 25;
 

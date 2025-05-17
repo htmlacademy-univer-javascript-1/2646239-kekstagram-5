@@ -18,6 +18,14 @@
   <section class="pictures  container">
 
 */
+import { openFullPhotoView } from './fullview.js';
+
+const addListener = function(picture, element) {
+  picture.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    openFullPhotoView(element);
+  });
+};
 
 const drawThumbnail = function(element, fragment, pictureTemplate) {
   const pictureNode = pictureTemplate.cloneNode(true);
@@ -30,8 +38,11 @@ const drawThumbnail = function(element, fragment, pictureTemplate) {
   likes.textContent = element.likes.toString();
   comments.textContent = element.comments.length.toString();
 
+  addListener(img, element);
+
   fragment.appendChild(pictureNode);
 };
+
 
 export const drawThumbnails = function(arrayOfPosts) {
 
