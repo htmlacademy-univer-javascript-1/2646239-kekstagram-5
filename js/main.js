@@ -1,6 +1,11 @@
 import {generateArrayOfPosts} from './util.js';
+import { drawThumbnails } from './thumbnails.js';
 
-generateArrayOfPosts();
-
+const arrayOfPosts = generateArrayOfPosts();
 // eslint-disable-next-line no-console
-console.log(generateArrayOfPosts());
+console.log(arrayOfPosts);
+
+
+drawThumbnails(arrayOfPosts);
+
+

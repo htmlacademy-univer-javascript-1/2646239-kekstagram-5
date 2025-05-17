@@ -57,6 +57,7 @@ const generatePost = function() {
 };
 
 export const generateArrayOfPosts = function() {
+  autoIncrementId = 0;
   const arrayOfPosts = [];
 
   for (let i = 0; i < data.POST_COUNT; i += 1) {
